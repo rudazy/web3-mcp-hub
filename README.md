@@ -1,11 +1,35 @@
 # Web3 MCP Hub
 
+[![MCP Servers](https://img.shields.io/badge/MCP_Servers-80+-blue?style=for-the-badge)](https://github.com/rudazy/web3-mcp-hub)
+[![Blockchains](https://img.shields.io/badge/Blockchains-130+-green?style=for-the-badge)](https://github.com/rudazy/web3-mcp-hub)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](CONTRIBUTING.md)
+
 **The definitive open-source registry of Model Context Protocol (MCP) servers for Web3, blockchain, and decentralized applications.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+> Making blockchain accessible to AI agents and developers
 
 ---
+
+### Why This Exists
+
+MCP servers are scattered across GitHub with no central Web3-focused directory. This hub solves that by:
+
+-  **Curating** the best blockchain MCP servers in one place
+-  **Categorizing** by ecosystem (EVM, Solana, Bitcoin, L2s, DeFi, NFTs)
+-  **Providing** ready-to-use configuration examples
+-  **Maintaining** quality standards and documentation
+
+### Quick Links
+
+| Resource | Description |
+|----------|-------------|
+| [ Getting Started](docs/getting-started.md) | Setup guide for beginners |
+| [ Full Server List](docs/SERVERS.md) | Expanded directory with 80+ servers |
+| [ Contributing](CONTRIBUTING.md) | Add new servers to the registry |
+
+---
+
 
 ## Overview
 
