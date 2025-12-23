@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "evm": {
+      "command": "npx",
+      "args": ["-y", "evm-mcp-server"],
+      "description": "EVM chains: Ethereum, Polygon, Arbitrum, Base, Optimism, and 55+ more"
+    },
+    "solana": {
+      "command": "npx",
+      "args": ["-y", "@sendai/solana-agent-kit"],
+      "description": "Solana blockchain: SOL, SPL tokens, DeFi, NFTs"
+    },
+    "bitcoin": {
+      "command": "npx",
+      "args": ["-y", "bitcoin-mcp"],
+      "description": "Bitcoin: BTC balance, transactions, Lightning Network"
+    }
+  }
+}
