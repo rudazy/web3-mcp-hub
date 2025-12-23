@@ -1,0 +1,60 @@
+{
+  "mcpServers": {
+    "intuition": {
+      "command": "npx",
+      "args": ["-y", "@0xintuition/intuition-mcp-server"],
+      "description": "Intuition: Trust scores, attestations, credentials, expert discovery on Base"
+    }
+  },
+  "advanced": {
+    "mcpServers": {
+      "intuition": {
+        "command": "npx",
+        "args": ["-y", "@0xintuition/intuition-mcp-server"],
+        "description": "Intuition: Trust scores, attestations, credentials, expert discovery"
+      },
+      "evm": {
+        "command": "npx",
+        "args": ["-y", "evm-mcp-server"],
+        "description": "EVM chains: On-chain data, balances, transactions"
+      },
+      "dune": {
+        "command": "npx",
+        "args": ["-y", "dune-mcp-server"],
+        "env": {
+          "DUNE_API_KEY": "your-api-key"
+        },
+        "description": "Dune Analytics: Custom SQL queries, historical data"
+      }
+    }
+  },
+  "network": {
+    "name": "Base",
+    "chainId": 8453,
+    "explorer": "https://explorer.intuition.systems",
+    "graphql": "https://graph.intuition.systems/graphql",
+    "portal": "https://portal.intuition.systems"
+  },
+  "tools": [
+    {
+      "name": "getTrustScore",
+      "description": "Get aggregated trust score for an address",
+      "parameters": ["address"]
+    },
+    {
+      "name": "getAttestations",
+      "description": "Query attestations with filters",
+      "parameters": ["address", "filters"]
+    },
+    {
+      "name": "verifyCredential",
+      "description": "Verify if address has specific attestation",
+      "parameters": ["address", "claim"]
+    },
+    {
+      "name": "findTrustedExperts",
+      "description": "Find highly trusted addresses in a topic",
+      "parameters": ["topic"]
+    }
+  ]
+}
