@@ -1,0 +1,280 @@
+{
+  "name": "Web3 MCP Hub",
+  "version": "1.0.0",
+  "description": "Registry of Model Context Protocol servers for Web3, blockchain, and decentralized applications",
+  "repository": "https://github.com/rudazy/web3-mcp-hub",
+  "lastUpdated": "2025-12-23",
+  "totalServers": 80,
+  "totalChains": 130,
+  "categories": [
+    "identity",
+    "multi-chain",
+    "evm",
+    "solana",
+    "bitcoin",
+    "layer2",
+    "non-evm",
+    "defi",
+    "nft",
+    "analytics",
+    "market-data",
+    "developer-tools"
+  ],
+  "servers": [
+    {
+      "id": "intuition",
+      "name": "Intuition MCP",
+      "category": "identity",
+      "repository": "https://github.com/0xIntuition/intuition-mcp-server",
+      "package": "@0xintuition/intuition-mcp-server",
+      "networks": ["base"],
+      "features": ["trust-scores", "attestations", "credentials", "expert-discovery", "knowledge-graph"],
+      "apiKeyRequired": false,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "@0xintuition/intuition-mcp-server"]
+      }
+    },
+    {
+      "id": "web3-mcp",
+      "name": "Web3 MCP",
+      "category": "multi-chain",
+      "repository": "https://github.com/strangelove-ventures/web3-mcp",
+      "package": "web3-mcp",
+      "networks": ["ethereum", "solana", "cardano", "thorchain", "xrp", "ton", "bitcoin", "litecoin", "dogecoin"],
+      "features": ["balances", "transactions", "swaps", "staking", "cross-chain"],
+      "apiKeyRequired": false,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "web3-mcp"]
+      }
+    },
+    {
+      "id": "tatum",
+      "name": "Tatum Blockchain MCP",
+      "category": "multi-chain",
+      "repository": "https://github.com/tatumio/blockchain-mcp",
+      "package": "@tatumio/blockchain-mcp",
+      "networks": ["130+ networks"],
+      "features": ["rpc-gateway", "nft-metadata", "wallet-portfolios", "exchange-rates"],
+      "apiKeyRequired": true,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "@tatumio/blockchain-mcp"],
+        "env": {
+          "TATUM_API_KEY": "your-api-key"
+        }
+      }
+    },
+    {
+      "id": "evm-mcp",
+      "name": "EVM MCP Server",
+      "category": "evm",
+      "repository": "https://github.com/mcpdotdirect/evm-mcp-server",
+      "package": "evm-mcp-server",
+      "networks": ["ethereum", "arbitrum", "optimism", "base", "polygon", "zksync", "avalanche", "bsc", "fantom", "cronos"],
+      "features": ["smart-contracts", "token-transfers", "ens-resolution", "gas-estimation"],
+      "apiKeyRequired": false,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "evm-mcp-server"]
+      }
+    },
+    {
+      "id": "alchemy",
+      "name": "Alchemy MCP",
+      "category": "evm",
+      "repository": "https://github.com/alchemyplatform/alchemy-mcp-server",
+      "package": "@alchemy/mcp-server",
+      "networks": ["ethereum", "polygon", "arbitrum", "optimism", "base"],
+      "features": ["token-prices", "nft-ownership", "transaction-history", "swaps"],
+      "apiKeyRequired": true,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "@alchemy/mcp-server"],
+        "env": {
+          "ALCHEMY_API_KEY": "your-api-key"
+        }
+      }
+    },
+    {
+      "id": "moralis",
+      "name": "Moralis MCP",
+      "category": "evm",
+      "repository": "https://github.com/MoralisWeb3/moralis-mcp-server",
+      "package": "@moralisweb3/mcp-server",
+      "networks": ["ethereum", "polygon", "bsc", "avalanche", "fantom", "cronos"],
+      "features": ["wallet-analytics", "defi-positions", "token-metrics", "nft-data"],
+      "apiKeyRequired": true,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "@moralisweb3/mcp-server"],
+        "env": {
+          "MORALIS_API_KEY": "your-api-key"
+        }
+      }
+    },
+    {
+      "id": "solana-agent-kit",
+      "name": "Solana Agent Kit MCP",
+      "category": "solana",
+      "repository": "https://github.com/sendaifun/solana-agent-kit",
+      "package": "@sendai/solana-agent-kit",
+      "networks": ["solana"],
+      "features": ["spl-tokens", "defi-operations", "nft-creation", "cross-chain"],
+      "apiKeyRequired": false,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "@sendai/solana-agent-kit"]
+      }
+    },
+    {
+      "id": "bitcoin-mcp",
+      "name": "Bitcoin MCP",
+      "category": "bitcoin",
+      "repository": "https://github.com/AbdelStark/bitcoin-mcp",
+      "package": "bitcoin-mcp",
+      "networks": ["bitcoin", "lightning"],
+      "features": ["key-generation", "address-validation", "transaction-decoding", "lightning-payments"],
+      "apiKeyRequired": false,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "bitcoin-mcp"]
+      }
+    },
+    {
+      "id": "opensea",
+      "name": "OpenSea MCP",
+      "category": "nft",
+      "repository": "https://docs.opensea.io/docs/mcp",
+      "package": "@opensea/mcp-server",
+      "networks": ["ethereum", "polygon", "solana", "base", "arbitrum"],
+      "features": ["nft-marketplace", "collection-analytics", "rarity-scores", "trading-volumes"],
+      "apiKeyRequired": true,
+      "license": "Proprietary",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "@opensea/mcp-server"],
+        "env": {
+          "OPENSEA_API_KEY": "your-api-key"
+        }
+      }
+    },
+    {
+      "id": "dune",
+      "name": "Dune Analytics MCP",
+      "category": "analytics",
+      "repository": "https://github.com/SAK1337/dune-mcp",
+      "package": "dune-mcp",
+      "networks": ["ethereum", "polygon", "optimism", "bsc", "solana"],
+      "features": ["sql-queries", "cached-results", "query-execution"],
+      "apiKeyRequired": true,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "dune-mcp"],
+        "env": {
+          "DUNE_API_KEY": "your-api-key"
+        }
+      }
+    },
+    {
+      "id": "coingecko",
+      "name": "CoinGecko MCP",
+      "category": "market-data",
+      "repository": "https://github.com/Blockchain-MCPs/coingecko-mcp",
+      "package": "coingecko-mcp",
+      "networks": [],
+      "features": ["token-prices", "market-data", "historical-data"],
+      "apiKeyRequired": false,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "coingecko-mcp"]
+      }
+    },
+    {
+      "id": "goat-sdk",
+      "name": "GOAT SDK MCP",
+      "category": "multi-chain",
+      "repository": "https://github.com/goat-sdk/goat",
+      "package": "@goat-sdk/mcp",
+      "networks": ["ethereum", "solana", "base"],
+      "features": ["on-chain-actions", "smart-contracts", "token-management", "defi-operations"],
+      "apiKeyRequired": false,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "@goat-sdk/mcp"]
+      }
+    },
+    {
+      "id": "pocket-network",
+      "name": "Pocket Network MCP",
+      "category": "multi-chain",
+      "repository": "https://github.com/pokt-network/mcp",
+      "package": "@pokt-network/mcp",
+      "networks": ["63+ networks"],
+      "features": ["natural-language-queries", "ens-resolution", "cross-chain-comparisons"],
+      "apiKeyRequired": false,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "@pokt-network/mcp"]
+      }
+    },
+    {
+      "id": "uniswap-trader",
+      "name": "Uniswap Trader MCP",
+      "category": "defi",
+      "repository": "https://github.com/kukapay/uniswap-trader-mcp",
+      "package": "uniswap-trader-mcp",
+      "networks": ["ethereum", "polygon", "arbitrum", "optimism", "base"],
+      "features": ["token-swaps", "price-quotes", "slippage-control"],
+      "apiKeyRequired": false,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "uniswap-trader-mcp"]
+      }
+    },
+    {
+      "id": "aave",
+      "name": "Aave MCP",
+      "category": "defi",
+      "repository": "https://mcpmarket.com/server/aave",
+      "package": "aave-mcp",
+      "networks": ["base"],
+      "features": ["lending", "borrowing", "liquidations", "supply-withdraw"],
+      "apiKeyRequired": false,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "npx",
+        "args": ["-y", "aave-mcp"]
+      }
+    }
+  ]
+}

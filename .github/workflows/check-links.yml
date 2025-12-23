@@ -1,0 +1,69 @@
+name: Check Links
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # Monthly on the 1st
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check repository URLs
+        run: |
+          node << 'EOF'
+          const fs = require('fs');
+          const https = require('https');
+          const http = require('http');
+
+          const registry = JSON.parse(fs.readFileSync('registry.json', 'utf8'));
+
+          function checkUrl(url) {
+            return new Promise((resolve) => {
+              const protocol = url.startsWith('https') ? https : http;
+              const req = protocol.get(url, { timeout: 10000 }, (res) => {
+                resolve({ url, status: res.statusCode, ok: res.statusCode < 400 });
+              });
+              req.on('error', (err) => {
+                resolve({ url, status: 'error', ok: false, error: err.message });
+              });
+              req.on('timeout', () => {
+                req.destroy();
+                resolve({ url, status: 'timeout', ok: false });
+              });
+            });
+          }
+
+          async function main() {
+            console.log('Checking repository URLs...\n');
+            
+            const results = [];
+            for (const server of registry.servers) {
+              if (server.repository && server.repository.startsWith('http')) {
+                const result = await checkUrl(server.repository);
+                results.push({ name: server.name, ...result });
+                const status = result.ok ? '✓' : '✗';
+                console.log(`${status} ${server.name}: ${result.status}`);
+              }
+            }
+
+            const failed = results.filter(r => !r.ok);
+            console.log(`\n${results.length - failed.length}/${results.length} URLs accessible`);
+            
+            if (failed.length > 0) {
+              console.log('\nFailed URLs:');
+              failed.forEach(f => console.log(`  - ${f.name}: ${f.url}`));
+            }
+          }
+
+          main();
+          EOF

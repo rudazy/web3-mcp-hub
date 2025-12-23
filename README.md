@@ -432,6 +432,30 @@ All listed servers must:
 - Be actively maintained
 
 ---
+## Related Resources
+
+### Other MCP Registries
+
+| Registry | Focus | Link |
+|----------|-------|------|
+| awesome-mcp-servers | General MCP servers | [github.com/wong2/awesome-mcp-servers](https://github.com/wong2/awesome-mcp-servers) |
+| awesome-blockchain-mcps | Blockchain focused | [github.com/royyannick/awesome-blockchain-mcps](https://github.com/royyannick/awesome-blockchain-mcps) |
+| awesome-web3-mcp-servers | Web3 servers | [github.com/demcp/awesome-web3-mcp-servers](https://github.com/demcp/awesome-web3-mcp-servers) |
+| MCP Servers Directory | Searchable directory | [mcpservers.org](https://mcpservers.org) |
+
+### Official Documentation
+
+- [Model Context Protocol Specification](https://modelcontextprotocol.io)
+- [Anthropic MCP Documentation](https://docs.anthropic.com/en/docs/mcp)
+- [MCP GitHub Organization](https://github.com/modelcontextprotocol)
+
+### Web3 Resources
+
+- [Intuition Portal](https://portal.intuition.systems) - On-chain reputation
+- [Alchemy Documentation](https://docs.alchemy.com) - Web3 development
+- [Moralis Documentation](https://docs.moralis.io) - Web3 APIs
+
+---
 
 ## Security
 

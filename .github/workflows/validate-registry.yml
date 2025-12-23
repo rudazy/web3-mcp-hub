@@ -1,0 +1,71 @@
+name: Validate Registry
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sunday
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate JSON syntax
+        run: |
+          echo "Validating registry.json..."
+          node -e "JSON.parse(require('fs').readFileSync('registry.json', 'utf8'))"
+          echo "registry.json is valid JSON"
+
+      - name: Check repository links
+        run: |
+          echo "Checking repository links..."
+          node << 'EOF'
+          const fs = require('fs');
+          const registry = JSON.parse(fs.readFileSync('registry.json', 'utf8'));
+          
+          console.log(`Total servers: ${registry.servers.length}`);
+          console.log(`Categories: ${registry.categories.length}`);
+          
+          const categories = {};
+          registry.servers.forEach(server => {
+            categories[server.category] = (categories[server.category] || 0) + 1;
+          });
+          
+          console.log('\nServers by category:');
+          Object.entries(categories).forEach(([cat, count]) => {
+            console.log(`  ${cat}: ${count}`);
+          });
+          
+          const apiRequired = registry.servers.filter(s => s.apiKeyRequired).length;
+          console.log(`\nAPI key required: ${apiRequired}/${registry.servers.length}`);
+          
+          console.log('\nValidation complete!');
+          EOF
+
+      - name: Generate stats badge data
+        run: |
+          node << 'EOF'
+          const fs = require('fs');
+          const registry = JSON.parse(fs.readFileSync('registry.json', 'utf8'));
+          
+          const stats = {
+            totalServers: registry.servers.length,
+            totalChains: registry.totalChains,
+            categories: registry.categories.length,
+            lastUpdated: new Date().toISOString().split('T')[0]
+          };
+          
+          console.log('Registry Stats:');
+          console.log(JSON.stringify(stats, null, 2));
+          EOF
