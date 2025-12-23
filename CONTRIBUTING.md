@@ -1,142 +1,138 @@
 # Contributing to Web3 MCP Hub
 
-Thank you for your interest in contributing to Web3 MCP Hub. This document provides guidelines for contributing to the registry.
+Thank you for your interest in contributing to the Web3 MCP Hub. This document outlines the process for adding new servers and improving the registry.
 
 ---
 
-## Table of Contents
+## Ways to Contribute
 
-- [Code of Conduct](#code-of-conduct)
-- [How to Contribute](#how-to-contribute)
-- [Adding a New MCP Server](#adding-a-new-mcp-server)
-- [Updating Existing Entries](#updating-existing-entries)
-- [Pull Request Process](#pull-request-process)
-- [Quality Standards](#quality-standards)
-
----
-
-## Code of Conduct
-
-- Be respectful and inclusive
-- Provide constructive feedback
-- Focus on what is best for the community
-- Show empathy towards other community members
+- **Add new servers** - Submit MCP servers not yet listed
+- **Fix errors** - Correct inaccurate information or broken links
+- **Improve documentation** - Enhance explanations, examples, or tutorials
+- **Test servers** - Verify functionality and document results
+- **Suggest improvements** - Propose new features or organizational changes
 
 ---
 
-## How to Contribute
+## Adding a New Server
 
-### Types of Contributions
+### Requirements
 
-1. **Adding new MCP servers** - Submit servers not yet listed
-2. **Updating information** - Fix outdated links, descriptions, or features
-3. **Improving documentation** - Enhance guides, examples, or explanations
-4. **Reporting issues** - Flag broken links, deprecated servers, or inaccuracies
-5. **Suggesting categories** - Propose new organizational structures
+Before submitting, ensure the server:
 
-### Getting Started
+1. Does not already exist in the registry (check README.md and docs/SERVERS.md)
+2. Is Web3-related (interacts with blockchains, DeFi, NFTs, or cryptocurrency)
+3. Has a public repository with documentation
+4. Works with standard MCP clients (Claude Desktop, Cursor, or Claude Code CLI)
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b add-server-name`
-3. Make your changes
-4. Commit with clear messages: `git commit -m "Add ServerName to Category"`
-5. Push to your fork: `git push origin add-server-name`
-6. Open a Pull Request
+### Submission Template
 
----
+When submitting a new server via Pull Request, include the following:
+```
+SERVER NAME:
+CATEGORY: [Identity / Multi-Chain / EVM / Solana / Bitcoin / L2 / Non-EVM / DeFi / NFT / Analytics / Market Data / Developer Tools]
+REPOSITORY URL:
+DOCUMENTATION URL:
+NETWORKS SUPPORTED:
+API KEY REQUIRED: [Yes / No / Optional]
+LICENSE:
 
-## Adding a New MCP Server
+KEY FEATURES:
+- Feature 1
+- Feature 2
+- Feature 3
 
-### Required Information
-
-| Field | Required | Description |
-|-------|----------|-------------|
-| Name | Yes | Official server name |
-| Repository | Yes | GitHub URL or official documentation |
-| Networks | Yes | Supported blockchain networks |
-| Features | Yes | Key capabilities (3-5 items) |
-| Configuration | Recommended | Example JSON configuration |
-| API Key Required | If applicable | Whether external API key is needed |
-| License | Recommended | Open source license type |
-
-### Entry Format
-
-Add entries to the appropriate category table in README.md:
-````markdown
-| **Server Name** | Network1, Network2 | Feature1, feature2, feature3 | [org/repo](https://github.com/org/repo) |
-````
-
-### Configuration Example Format
-````markdown
-**Configuration Example - Server Name:**
-```json
+CONFIGURATION EXAMPLE:
 {
   "mcpServers": {
-    "server-id": {
+    "server-name": {
       "command": "npx",
-      "args": ["-y", "@package/server"],
-      "env": {
-        "API_KEY": "your-api-key"
-      }
+      "args": ["-y", "package-name"]
     }
   }
 }
+
+TESTING STATUS:
+- [ ] Successfully installed
+- [ ] Connected to MCP client
+- [ ] Core features verified
+- [ ] Documentation accurate
+
+TESTED BY: @your-github-username
+TEST DATE: YYYY-MM-DD
+NOTES: [Any additional information]
 ```
-
-### Category Selection
-
-| Category | Criteria |
-|----------|----------|
-| Identity and Reputation | DIDs, attestations, trust systems, ENS |
-| Multi-Chain Infrastructure | Supports 3+ distinct blockchain networks |
-| EVM Networks | Ethereum and EVM-compatible chains |
-| Solana Ecosystem | Solana-specific tooling |
-| Bitcoin and Lightning | Bitcoin, Lightning, Ordinals, BRC-20 |
-| Layer 2 Solutions | Arbitrum, Optimism, Base, zkSync, Polygon |
-| Non-EVM Chains | Cardano, Cosmos, TON, XRP, Aptos, etc. |
-| DeFi Protocols | DEXs, lending, bridges, yield protocols |
-| NFT and Digital Assets | NFT marketplaces, collections, metadata |
-| Data and Analytics | Blockchain data platforms, indexers |
-| Market Data | Pricing, market cap, trading data |
-| Developer Tools | SDKs, documentation, testing, RPC providers |
 
 ---
 
-## Updating Existing Entries
+## Server Quality Standards
 
-### When to Update
+All servers in this registry should meet these criteria:
 
-- Repository URL changes
-- New features added
-- Networks supported changes
-- Project renamed or deprecated
-- Configuration format changes
-
-### Deprecation Process
-
-If a server is no longer maintained:
-
-1. Add `(Deprecated)` to the server name
-2. Add note about alternatives if available
-3. Keep entry for 3 months before removal
-4. Document reason in commit message
+| Criteria | Requirement |
+|----------|-------------|
+| Repository | Public and accessible |
+| Documentation | Clear setup instructions |
+| Maintenance | Updated within the last 12 months |
+| Functionality | Core features work as described |
+| Security | No known vulnerabilities or malicious code |
 
 ---
 
 ## Pull Request Process
 
-### Before Submitting
+1. Fork the repository
+2. Create a branch: `git checkout -b add-server-name`
+3. Add the server to the appropriate category in README.md
+4. Add detailed entry to docs/SERVERS.md
+5. Submit PR with completed submission template
+6. Respond to review feedback
 
-- [ ] Verify all links work
-- [ ] Test configuration examples if possible
-- [ ] Check for duplicate entries
-- [ ] Follow the entry format
-- [ ] Place in correct category
+### Commit Message Format
+```
+Add [Server Name] to [Category]
 
-### PR Title Format
-````
-Add: ServerName to Category
-Update: ServerName features/links
-Remove: Deprecated ServerName
-Fix: Broken link for ServerName
-Docs: Improve installation guide
+- Networks: Ethereum, Polygon
+- Features: balance queries, token transfers
+- API key: required/not required
+```
+
+---
+
+## Reporting Issues
+
+### Broken or Deprecated Servers
+
+If you find a server that no longer works:
+
+1. Open an issue with the server name and repository URL
+2. Describe what is broken (installation fails, features not working, etc.)
+3. Include error messages if applicable
+
+### Incorrect Information
+
+If server details are inaccurate:
+
+1. Open an issue or submit a PR with corrections
+2. Provide source for correct information
+
+---
+
+## Code of Conduct
+
+- Be respectful and constructive
+- Focus on facts and technical accuracy
+- Credit original authors appropriately
+- No spam or self-promotion without value
+
+---
+
+## Questions
+
+If you have questions about contributing, open an issue with the label `question`.
+
+---
+
+## License
+
+By contributing, you agree that your contributions will be licensed under the MIT License.
