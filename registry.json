@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "Web3 MCP Hub",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Registry of Model Context Protocol servers for Web3, blockchain, and decentralized applications",
   "repository": "https://github.com/rudazy/web3-mcp-hub",
   "website": "https://rudazy.github.io/web3-mcp-hub",
@@ -86,18 +86,31 @@
       "description": "Query atoms and triples from Intuition's decentralized knowledge graph, create attestations, identity resolution",
       "category": "identity",
       "repository": "https://github.com/0xIntuition/intuition-mcp-server",
-      "package": "@0xintuition/intuition-mcp-server",
+      "package": null,
       "packageManager": "npm",
-      "networks": ["base"],
-      "features": ["trust-scores", "attestations", "credentials", "expert-discovery", "knowledge-graph", "identity-resolution"],
+      "networks": [
+        "base"
+      ],
+      "features": [
+        "trust-scores",
+        "attestations",
+        "credentials",
+        "expert-discovery",
+        "knowledge-graph",
+        "identity-resolution"
+      ],
       "apiKeyRequired": false,
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "@0xintuition/intuition-mcp-server"]
-      }
+        "args": [
+          "-y",
+          "@0xintuition/intuition-mcp-server"
+        ]
+      },
+      "installationType": "git"
     },
     {
       "id": "web3-mcp",
@@ -105,19 +118,45 @@
       "description": "Multi-chain balances, transactions, swaps, staking across 10+ blockchains",
       "category": "multi-chain",
       "repository": "https://github.com/strangelove-ventures/web3-mcp",
-      "package": "web3-mcp",
+      "package": null,
       "packageManager": "npm",
-      "networks": ["ethereum", "solana", "cardano", "thorchain", "xrp", "ton", "bitcoin", "litecoin", "dogecoin", "bitcoin-cash"],
-      "features": ["balances", "transactions", "swaps", "staking", "cross-chain"],
+      "networks": [
+        "ethereum",
+        "solana",
+        "cardano",
+        "thorchain",
+        "xrp",
+        "ton",
+        "bitcoin",
+        "litecoin",
+        "dogecoin",
+        "bitcoin-cash"
+      ],
+      "features": [
+        "balances",
+        "transactions",
+        "swaps",
+        "staking",
+        "cross-chain"
+      ],
       "apiKeyRequired": false,
-      "envVars": ["ENABLE_ETHEREUM_TOOLS", "ENABLE_SOLANA_TOOLS", "ENABLE_BITCOIN_TOOLS", "BLOCKFROST_API_KEY"],
+      "envVars": [
+        "ENABLE_ETHEREUM_TOOLS",
+        "ENABLE_SOLANA_TOOLS",
+        "ENABLE_BITCOIN_TOOLS",
+        "BLOCKFROST_API_KEY"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "web3-mcp"]
-      }
+        "args": [
+          "-y",
+          "web3-mcp"
+        ]
+      },
+      "installationType": "git"
     },
     {
       "id": "tatum",
@@ -127,16 +166,29 @@
       "repository": "https://github.com/tatumio/blockchain-mcp",
       "package": "@tatumio/blockchain-mcp",
       "packageManager": "npm",
-      "networks": ["130+ networks"],
-      "features": ["rpc-gateway", "nft-metadata", "wallet-portfolios", "exchange-rates", "malicious-address-detection"],
+      "networks": [
+        "130+ networks"
+      ],
+      "features": [
+        "rpc-gateway",
+        "nft-metadata",
+        "wallet-portfolios",
+        "exchange-rates",
+        "malicious-address-detection"
+      ],
       "apiKeyRequired": true,
-      "envVars": ["TATUM_API_KEY"],
+      "envVars": [
+        "TATUM_API_KEY"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "@tatumio/blockchain-mcp"],
+        "args": [
+          "-y",
+          "@tatumio/blockchain-mcp"
+        ],
         "env": {
           "TATUM_API_KEY": "your-api-key"
         }
@@ -148,18 +200,31 @@
       "description": "On-chain actions, smart contract interactions, token management with 200+ integrations",
       "category": "multi-chain",
       "repository": "https://github.com/goat-sdk/goat",
-      "package": "@goat-sdk/mcp",
+      "package": null,
       "packageManager": "npm",
-      "networks": ["ethereum", "solana", "base"],
-      "features": ["on-chain-actions", "smart-contracts", "token-management", "defi-operations"],
+      "networks": [
+        "ethereum",
+        "solana",
+        "base"
+      ],
+      "features": [
+        "on-chain-actions",
+        "smart-contracts",
+        "token-management",
+        "defi-operations"
+      ],
       "apiKeyRequired": false,
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "@goat-sdk/mcp"]
-      }
+        "args": [
+          "-y",
+          "@goat-sdk/mcp"
+        ]
+      },
+      "installationType": "git"
     },
     {
       "id": "nodit",
@@ -169,15 +234,33 @@
       "repository": "https://github.com/noditlabs/nodit-mcp-server",
       "package": "@noditlabs/nodit-mcp-server",
       "packageManager": "npm",
-      "networks": ["ethereum", "base", "optimism", "arbitrum", "polygon", "aptos", "bitcoin", "dogecoin", "tron", "xrpl"],
-      "features": ["web3-data-apis", "node-infrastructure", "graphql-indexing"],
+      "networks": [
+        "ethereum",
+        "base",
+        "optimism",
+        "arbitrum",
+        "polygon",
+        "aptos",
+        "bitcoin",
+        "dogecoin",
+        "tron",
+        "xrpl"
+      ],
+      "features": [
+        "web3-data-apis",
+        "node-infrastructure",
+        "graphql-indexing"
+      ],
       "apiKeyRequired": true,
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "@noditlabs/nodit-mcp-server"]
+        "args": [
+          "-y",
+          "@noditlabs/nodit-mcp-server"
+        ]
       }
     },
     {
@@ -186,18 +269,28 @@
       "description": "Natural language blockchain queries with ENS resolution across 63+ networks",
       "category": "multi-chain",
       "repository": "https://github.com/pokt-network/mcp",
-      "package": "@pokt-network/mcp",
+      "package": null,
       "packageManager": "npm",
-      "networks": ["63+ networks"],
-      "features": ["natural-language-queries", "ens-resolution", "cross-chain-comparisons"],
+      "networks": [
+        "63+ networks"
+      ],
+      "features": [
+        "natural-language-queries",
+        "ens-resolution",
+        "cross-chain-comparisons"
+      ],
       "apiKeyRequired": false,
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "@pokt-network/mcp"]
-      }
+        "args": [
+          "-y",
+          "@pokt-network/mcp"
+        ]
+      },
+      "installationType": "git"
     },
     {
       "id": "evm-mcp",
@@ -205,10 +298,33 @@
       "description": "Smart contracts, token transfers, ENS resolution, gas estimation across 60+ EVM chains",
       "category": "evm",
       "repository": "https://github.com/mcpdotdirect/evm-mcp-server",
-      "package": "evm-mcp-server",
+      "package": "@mcpdotdirect/mcp-server-evm",
       "packageManager": "npm",
-      "networks": ["ethereum", "arbitrum", "optimism", "base", "polygon", "zksync", "avalanche", "bsc", "fantom", "cronos", "scroll", "linea", "mantle", "blast"],
-      "features": ["smart-contracts", "token-transfers", "ens-resolution", "gas-estimation", "erc20", "erc721", "erc1155"],
+      "networks": [
+        "ethereum",
+        "arbitrum",
+        "optimism",
+        "base",
+        "polygon",
+        "zksync",
+        "avalanche",
+        "bsc",
+        "fantom",
+        "cronos",
+        "scroll",
+        "linea",
+        "mantle",
+        "blast"
+      ],
+      "features": [
+        "smart-contracts",
+        "token-transfers",
+        "ens-resolution",
+        "gas-estimation",
+        "erc20",
+        "erc721",
+        "erc1155"
+      ],
       "tools": 22,
       "apiKeyRequired": false,
       "license": "MIT",
@@ -216,7 +332,10 @@
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "evm-mcp-server"]
+        "args": [
+          "-y",
+          "evm-mcp-server"
+        ]
       }
     },
     {
@@ -227,16 +346,32 @@
       "repository": "https://github.com/alchemyplatform/alchemy-mcp-server",
       "package": "@alchemy/mcp-server",
       "packageManager": "npm",
-      "networks": ["ethereum", "polygon", "arbitrum", "optimism", "base"],
-      "features": ["token-prices", "nft-ownership", "transaction-history", "swaps"],
+      "networks": [
+        "ethereum",
+        "polygon",
+        "arbitrum",
+        "optimism",
+        "base"
+      ],
+      "features": [
+        "token-prices",
+        "nft-ownership",
+        "transaction-history",
+        "swaps"
+      ],
       "apiKeyRequired": true,
-      "envVars": ["ALCHEMY_API_KEY"],
+      "envVars": [
+        "ALCHEMY_API_KEY"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "@alchemy/mcp-server"],
+        "args": [
+          "-y",
+          "@alchemy/mcp-server"
+        ],
         "env": {
           "ALCHEMY_API_KEY": "your-api-key"
         }
@@ -248,19 +383,37 @@
       "description": "100+ API endpoints for wallet analytics, DeFi positions, token metrics, NFT data",
       "category": "evm",
       "repository": "https://github.com/MoralisWeb3/moralis-mcp-server",
-      "package": "@moralisweb3/mcp-server",
+      "package": "@moralisweb3/api-mcp-server",
       "packageManager": "npm",
-      "networks": ["ethereum", "polygon", "bsc", "avalanche", "fantom", "cronos"],
-      "features": ["wallet-analytics", "defi-positions", "token-metrics", "nft-data", "trading-sentiment"],
+      "networks": [
+        "ethereum",
+        "polygon",
+        "bsc",
+        "avalanche",
+        "fantom",
+        "cronos"
+      ],
+      "features": [
+        "wallet-analytics",
+        "defi-positions",
+        "token-metrics",
+        "nft-data",
+        "trading-sentiment"
+      ],
       "tools": 100,
       "apiKeyRequired": true,
-      "envVars": ["MORALIS_API_KEY"],
+      "envVars": [
+        "MORALIS_API_KEY"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "@moralisweb3/mcp-server"],
+        "args": [
+          "-y",
+          "@moralisweb3/mcp-server"
+        ],
         "env": {
           "MORALIS_API_KEY": "your-api-key"
         }
@@ -274,16 +427,29 @@
       "repository": "https://github.com/crazyrabbitLTC/mcp-etherscan-server",
       "package": "mcp-etherscan-server",
       "packageManager": "npm",
-      "networks": ["ethereum"],
-      "features": ["balance-checking", "transaction-history", "contract-abis", "gas-prices", "ens-resolution"],
+      "networks": [
+        "ethereum"
+      ],
+      "features": [
+        "balance-checking",
+        "transaction-history",
+        "contract-abis",
+        "gas-prices",
+        "ens-resolution"
+      ],
       "apiKeyRequired": true,
-      "envVars": ["ETHERSCAN_API_KEY"],
+      "envVars": [
+        "ETHERSCAN_API_KEY"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "mcp-etherscan-server"],
+        "args": [
+          "-y",
+          "mcp-etherscan-server"
+        ],
         "env": {
           "ETHERSCAN_API_KEY": "your-api-key"
         }
@@ -295,18 +461,28 @@
       "description": "Wallet operations, smart contracts, StarknetID resolution with dual transport",
       "category": "evm",
       "repository": "https://github.com/mcpdotdirect/starknet-mcp-server",
-      "package": "starknet-mcp-server",
+      "package": null,
       "packageManager": "npm",
-      "networks": ["starknet"],
-      "features": ["wallet-operations", "smart-contracts", "starknetid-resolution"],
+      "networks": [
+        "starknet"
+      ],
+      "features": [
+        "wallet-operations",
+        "smart-contracts",
+        "starknetid-resolution"
+      ],
       "apiKeyRequired": false,
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "starknet-mcp-server"]
-      }
+        "args": [
+          "-y",
+          "starknet-mcp-server"
+        ]
+      },
+      "installationType": "git"
     },
     {
       "id": "blockscout",
@@ -316,15 +492,25 @@
       "repository": "https://github.com/blockscout/blockscout-mcp",
       "package": "blockscout-mcp",
       "packageManager": "npm",
-      "networks": ["multiple-evm"],
-      "features": ["address-balances", "token-holdings", "nft-metadata", "transaction-data"],
+      "networks": [
+        "multiple-evm"
+      ],
+      "features": [
+        "address-balances",
+        "token-holdings",
+        "nft-metadata",
+        "transaction-data"
+      ],
       "apiKeyRequired": false,
       "license": "MIT",
       "status": "active",
       "verified": false,
       "config": {
         "command": "npx",
-        "args": ["-y", "blockscout-mcp"]
+        "args": [
+          "-y",
+          "blockscout-mcp"
+        ]
       }
     },
     {
@@ -333,24 +519,39 @@
       "description": "40+ Solana actions including SPL tokens, DeFi operations, NFT creation",
       "category": "solana",
       "repository": "https://github.com/sendaifun/solana-agent-kit",
-      "package": "@sendai/solana-agent-kit",
+      "package": "solana-agent-kit",
       "packageManager": "npm",
-      "networks": ["solana"],
-      "features": ["spl-tokens", "defi-operations", "nft-creation", "cross-chain", "voltr-vaults"],
+      "networks": [
+        "solana"
+      ],
+      "features": [
+        "spl-tokens",
+        "defi-operations",
+        "nft-creation",
+        "cross-chain",
+        "voltr-vaults"
+      ],
       "tools": 40,
       "apiKeyRequired": false,
-      "envVars": ["SOLANA_PRIVATE_KEY", "SOLANA_RPC_URL"],
+      "envVars": [
+        "SOLANA_PRIVATE_KEY",
+        "SOLANA_RPC_URL"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "@sendai/solana-agent-kit"],
+        "args": [
+          "-y",
+          "@sendai/solana-agent-kit"
+        ],
         "env": {
           "SOLANA_PRIVATE_KEY": "your-private-key",
           "SOLANA_RPC_URL": "your-rpc-url"
         }
-      }
+      },
+      "installationType": "git"
     },
     {
       "id": "aldrin-solana",
@@ -358,8 +559,15 @@
       "description": "21 RPC methods for account operations, staking, token management",
       "category": "solana",
       "repository": "https://www.pulsemcp.com/servers/aldrin-labs-solana",
-      "networks": ["solana"],
-      "features": ["rpc-methods", "account-operations", "staking", "token-management"],
+      "networks": [
+        "solana"
+      ],
+      "features": [
+        "rpc-methods",
+        "account-operations",
+        "staking",
+        "token-management"
+      ],
       "tools": 21,
       "apiKeyRequired": false,
       "status": "active",
@@ -371,15 +579,25 @@
       "description": "Smart contract deployment, transactions, account management, keypair generation",
       "category": "solana",
       "repository": "https://github.com/FrankGenGo/solana-web3js-mcp-server",
-      "networks": ["solana"],
-      "features": ["smart-contract-deployment", "transactions", "account-management", "keypair-generation"],
+      "networks": [
+        "solana"
+      ],
+      "features": [
+        "smart-contract-deployment",
+        "transactions",
+        "account-management",
+        "keypair-generation"
+      ],
       "apiKeyRequired": false,
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "solana-web3js-mcp-server"]
+        "args": [
+          "-y",
+          "solana-web3js-mcp-server"
+        ]
       }
     },
     {
@@ -388,10 +606,22 @@
       "description": "Wallet analysis, price predictions, security assessment, visualizations",
       "category": "solana",
       "repository": "https://github.com/FarseenSh/GOATsolana-mcp",
-      "networks": ["solana"],
-      "features": ["wallet-analysis", "price-predictions", "security-assessment", "visualizations", "multi-wallet"],
+      "networks": [
+        "solana"
+      ],
+      "features": [
+        "wallet-analysis",
+        "price-predictions",
+        "security-assessment",
+        "visualizations",
+        "multi-wallet"
+      ],
       "apiKeyRequired": true,
-      "envVars": ["BIRDEYE_API_KEY", "COINGECKO_API_KEY", "HELIUS_API_KEY"],
+      "envVars": [
+        "BIRDEYE_API_KEY",
+        "COINGECKO_API_KEY",
+        "HELIUS_API_KEY"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true
@@ -402,8 +632,15 @@
       "description": "Limit orders, token swaps, price fetching on Solana via Jupiter",
       "category": "solana",
       "repository": "https://github.com/sendaifun/awesome-solana-mcp-servers",
-      "networks": ["solana"],
-      "features": ["limit-orders", "token-swaps", "price-fetching", "order-history"],
+      "networks": [
+        "solana"
+      ],
+      "features": [
+        "limit-orders",
+        "token-swaps",
+        "price-fetching",
+        "order-history"
+      ],
       "apiKeyRequired": false,
       "status": "active",
       "verified": false
@@ -414,8 +651,14 @@
       "description": "Security analysis, threat detection, suspicious program monitoring",
       "category": "solana",
       "repository": "https://github.com/sendaifun/awesome-solana-mcp-servers",
-      "networks": ["solana"],
-      "features": ["security-analysis", "threat-detection", "program-monitoring"],
+      "networks": [
+        "solana"
+      ],
+      "features": [
+        "security-analysis",
+        "threat-detection",
+        "program-monitoring"
+      ],
       "apiKeyRequired": false,
       "status": "active",
       "verified": false
@@ -426,8 +669,14 @@
       "description": "Wallet analytics, DeFi insights, strategy optimization",
       "category": "solana",
       "repository": "https://github.com/sendaifun/awesome-solana-mcp-servers",
-      "networks": ["solana"],
-      "features": ["wallet-analytics", "defi-insights", "strategy-optimization"],
+      "networks": [
+        "solana"
+      ],
+      "features": [
+        "wallet-analytics",
+        "defi-insights",
+        "strategy-optimization"
+      ],
       "apiKeyRequired": false,
       "status": "active",
       "verified": false
@@ -438,8 +687,14 @@
       "description": "Memecoin tracking, trend analysis, cultural insights",
       "category": "solana",
       "repository": "https://github.com/sendaifun/awesome-solana-mcp-servers",
-      "networks": ["solana"],
-      "features": ["memecoin-tracking", "trend-analysis", "cultural-insights"],
+      "networks": [
+        "solana"
+      ],
+      "features": [
+        "memecoin-tracking",
+        "trend-analysis",
+        "cultural-insights"
+      ],
       "apiKeyRequired": false,
       "status": "active",
       "verified": false
@@ -452,16 +707,30 @@
       "repository": "https://github.com/AbdelStark/bitcoin-mcp",
       "package": "bitcoin-mcp",
       "packageManager": "npm",
-      "networks": ["bitcoin", "lightning"],
-      "features": ["key-generation", "address-validation", "transaction-decoding", "lightning-payments"],
+      "networks": [
+        "bitcoin",
+        "lightning"
+      ],
+      "features": [
+        "key-generation",
+        "address-validation",
+        "transaction-decoding",
+        "lightning-payments"
+      ],
       "apiKeyRequired": false,
-      "envVars": ["LNBITS_URL", "LNBITS_API_KEY"],
+      "envVars": [
+        "LNBITS_URL",
+        "LNBITS_API_KEY"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "bitcoin-mcp"]
+        "args": [
+          "-y",
+          "bitcoin-mcp"
+        ]
       }
     },
     {
@@ -470,8 +739,14 @@
       "description": "Invoice payments, balance queries, BOLT11 decoding",
       "category": "bitcoin",
       "repository": "https://github.com/AbdelStark/lightning-mcp",
-      "networks": ["lightning"],
-      "features": ["invoice-payments", "balance-queries", "bolt11-decoding"],
+      "networks": [
+        "lightning"
+      ],
+      "features": [
+        "invoice-payments",
+        "balance-queries",
+        "bolt11-decoding"
+      ],
       "apiKeyRequired": true,
       "license": "MIT",
       "status": "active",
@@ -483,8 +758,15 @@
       "description": "Ordinals inscriptions, BRC-20 tokens, Runes, UTXO queries",
       "category": "bitcoin",
       "repository": "https://github.com/Calel33/ordiscan-mcp-v1",
-      "networks": ["bitcoin"],
-      "features": ["ordinals-inscriptions", "brc20-tokens", "runes", "utxo-queries"],
+      "networks": [
+        "bitcoin"
+      ],
+      "features": [
+        "ordinals-inscriptions",
+        "brc20-tokens",
+        "runes",
+        "utxo-queries"
+      ],
       "apiKeyRequired": true,
       "status": "active",
       "verified": true
@@ -495,8 +777,14 @@
       "description": "Ordinal detection, inscription parsing, content display",
       "category": "bitcoin",
       "repository": "https://github.com/Laz1mov/mcp-inscription",
-      "networks": ["bitcoin"],
-      "features": ["ordinal-detection", "inscription-parsing", "content-display"],
+      "networks": [
+        "bitcoin"
+      ],
+      "features": [
+        "ordinal-detection",
+        "inscription-parsing",
+        "content-display"
+      ],
       "apiKeyRequired": false,
       "license": "MIT",
       "status": "active",
@@ -507,12 +795,19 @@
       "name": "Zebedee ZBD MCP",
       "description": "Lightning micropayments, rewards, gaming integration",
       "category": "bitcoin",
-      "repository": "https://github.com/zebedeeio/zbd-mcp-server",
-      "networks": ["lightning"],
-      "features": ["lightning-micropayments", "rewards", "gaming-integration"],
+      "repository": "https://github.com/zebedeeio/zbd-payments-typescript-sdk",
+      "networks": [
+        "lightning"
+      ],
+      "features": [
+        "lightning-micropayments",
+        "rewards",
+        "gaming-integration"
+      ],
       "apiKeyRequired": true,
-      "status": "active",
-      "verified": true
+      "status": "deprecated",
+      "verified": false,
+      "note": "MCP server moved to packages/mcp-server in main SDK repo"
     },
     {
       "id": "bitcoin-sv",
@@ -520,8 +815,14 @@
       "description": "Wallet operations, 1Sat ordinals, utility functions",
       "category": "bitcoin",
       "repository": "https://github.com/b-open-io/bsv-mcp",
-      "networks": ["bitcoin-sv"],
-      "features": ["wallet-operations", "1sat-ordinals", "utility-functions"],
+      "networks": [
+        "bitcoin-sv"
+      ],
+      "features": [
+        "wallet-operations",
+        "1sat-ordinals",
+        "utility-functions"
+      ],
       "apiKeyRequired": false,
       "license": "MIT",
       "status": "active",
@@ -533,8 +834,14 @@
       "description": "Gas-free USDC transfers via Coinbase MPC wallets",
       "category": "layer2",
       "repository": "https://github.com/magnetai/mcp-free-usdc-transfer",
-      "networks": ["base"],
-      "features": ["gas-free-transfers", "usdc", "coinbase-mpc"],
+      "networks": [
+        "base"
+      ],
+      "features": [
+        "gas-free-transfers",
+        "usdc",
+        "coinbase-mpc"
+      ],
       "apiKeyRequired": true,
       "status": "active",
       "verified": true
@@ -545,8 +852,14 @@
       "description": "Transaction history, forensic analysis, address queries",
       "category": "non-evm",
       "repository": "https://github.com/marctheshark3/ergo-mcp",
-      "networks": ["ergo"],
-      "features": ["transaction-history", "forensic-analysis", "address-queries"],
+      "networks": [
+        "ergo"
+      ],
+      "features": [
+        "transaction-history",
+        "forensic-analysis",
+        "address-queries"
+      ],
       "apiKeyRequired": false,
       "status": "active",
       "verified": true
@@ -559,14 +872,24 @@
       "repository": "https://mcpmarket.com/server/aave",
       "package": "aave-mcp",
       "packageManager": "npm",
-      "networks": ["base"],
-      "features": ["lending", "borrowing", "liquidations", "supply-withdraw"],
+      "networks": [
+        "base"
+      ],
+      "features": [
+        "lending",
+        "borrowing",
+        "liquidations",
+        "supply-withdraw"
+      ],
       "apiKeyRequired": false,
       "status": "active",
       "verified": false,
       "config": {
         "command": "npx",
-        "args": ["-y", "aave-mcp"]
+        "args": [
+          "-y",
+          "aave-mcp"
+        ]
       }
     },
     {
@@ -577,15 +900,28 @@
       "repository": "https://github.com/kukapay/uniswap-trader-mcp",
       "package": "uniswap-trader-mcp",
       "packageManager": "npm",
-      "networks": ["ethereum", "polygon", "arbitrum", "optimism", "base"],
-      "features": ["token-swaps", "price-quotes", "slippage-control"],
+      "networks": [
+        "ethereum",
+        "polygon",
+        "arbitrum",
+        "optimism",
+        "base"
+      ],
+      "features": [
+        "token-swaps",
+        "price-quotes",
+        "slippage-control"
+      ],
       "apiKeyRequired": false,
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "uniswap-trader-mcp"]
+        "args": [
+          "-y",
+          "uniswap-trader-mcp"
+        ]
       }
     },
     {
@@ -594,18 +930,39 @@
       "description": "New pool tracking across 9 networks with real-time monitoring",
       "category": "defi",
       "repository": "https://github.com/kukapay/uniswap-poolspy-mcp",
-      "package": "uniswap-poolspy-mcp",
+      "package": null,
       "packageManager": "npm",
-      "networks": ["ethereum", "base", "optimism", "arbitrum", "polygon", "bsc", "avalanche", "celo", "blast"],
-      "features": ["pool-tracking", "real-time-monitoring", "volume-sorting", "tvl-sorting"],
+      "networks": [
+        "ethereum",
+        "base",
+        "optimism",
+        "arbitrum",
+        "polygon",
+        "bsc",
+        "avalanche",
+        "celo",
+        "blast"
+      ],
+      "features": [
+        "pool-tracking",
+        "real-time-monitoring",
+        "volume-sorting",
+        "tvl-sorting"
+      ],
       "apiKeyRequired": true,
-      "envVars": ["THEGRAPH_API_KEY"],
+      "envVars": [
+        "THEGRAPH_API_KEY"
+      ],
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "uniswap-poolspy-mcp"]
-      }
+        "args": [
+          "-y",
+          "uniswap-poolspy-mcp"
+        ]
+      },
+      "installationType": "git"
     },
     {
       "id": "opensea",
@@ -614,8 +971,21 @@
       "category": "nft",
       "repository": "https://docs.opensea.io/docs/mcp",
       "type": "remote",
-      "networks": ["ethereum", "polygon", "solana", "base", "arbitrum", "ronin", "gunz"],
-      "features": ["nft-marketplace", "collection-analytics", "rarity-scores", "trading-volumes"],
+      "networks": [
+        "ethereum",
+        "polygon",
+        "solana",
+        "base",
+        "arbitrum",
+        "ronin",
+        "gunz"
+      ],
+      "features": [
+        "nft-marketplace",
+        "collection-analytics",
+        "rarity-scores",
+        "trading-volumes"
+      ],
       "apiKeyRequired": true,
       "status": "active",
       "verified": true,
@@ -624,7 +994,8 @@
         "headers": {
           "Authorization": "Bearer YOUR_ACCESS_TOKEN"
         }
-      }
+      },
+      "installationType": "remote"
     },
     {
       "id": "dune",
@@ -634,16 +1005,31 @@
       "repository": "https://github.com/SAK1337/dune-mcp",
       "package": "dune-mcp",
       "packageManager": "pip",
-      "networks": ["ethereum", "polygon", "optimism", "bsc", "solana"],
-      "features": ["sql-queries", "cached-results", "query-execution"],
+      "networks": [
+        "ethereum",
+        "polygon",
+        "optimism",
+        "bsc",
+        "solana"
+      ],
+      "features": [
+        "sql-queries",
+        "cached-results",
+        "query-execution"
+      ],
       "apiKeyRequired": true,
-      "envVars": ["DUNE_API_KEY"],
+      "envVars": [
+        "DUNE_API_KEY"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "python",
-        "args": ["-m", "mcp_server_dune"],
+        "args": [
+          "-m",
+          "mcp_server_dune"
+        ],
         "env": {
           "DUNE_API_KEY": "your-api-key"
         }
@@ -654,12 +1040,24 @@
       "name": "Dune + Blockscout MCP",
       "description": "Combined analytics with compound tools for comprehensive wallet analysis",
       "category": "analytics",
-      "repository": "https://github.com/dennisonbertram/web3-stats-mcp",
-      "networks": ["ethereum", "polygon", "optimism", "arbitrum", "base", "solana"],
-      "features": ["combined-analytics", "compound-tools", "wallet-analysis"],
+      "repository": "https://github.com/crazyrabbitLTC/mcp-web3-stats",
+      "networks": [
+        "ethereum",
+        "polygon",
+        "optimism",
+        "arbitrum",
+        "base",
+        "solana"
+      ],
+      "features": [
+        "combined-analytics",
+        "compound-tools",
+        "wallet-analysis"
+      ],
       "apiKeyRequired": true,
       "status": "active",
-      "verified": true
+      "verified": true,
+      "package": "mcp-web3-stats"
     },
     {
       "id": "heurist-mesh",
@@ -667,8 +1065,15 @@
       "description": "On-chain analytics, token metrics, security insights, smart contract analysis",
       "category": "analytics",
       "repository": "https://github.com/heurist-network/heurist-mesh-mcp-server",
-      "networks": ["multiple"],
-      "features": ["on-chain-analytics", "token-metrics", "security-insights", "smart-contract-analysis"],
+      "networks": [
+        "multiple"
+      ],
+      "features": [
+        "on-chain-analytics",
+        "token-metrics",
+        "security-insights",
+        "smart-contract-analysis"
+      ],
       "apiKeyRequired": true,
       "status": "active",
       "verified": true
@@ -682,14 +1087,21 @@
       "package": "coingecko-mcp",
       "packageManager": "npm",
       "networks": [],
-      "features": ["token-prices", "market-data", "historical-data"],
+      "features": [
+        "token-prices",
+        "market-data",
+        "historical-data"
+      ],
       "apiKeyRequired": false,
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "coingecko-mcp"]
+        "args": [
+          "-y",
+          "coingecko-mcp"
+        ]
       }
     },
     {
@@ -698,21 +1110,32 @@
       "description": "Real-time prices, market cap, volume, rankings",
       "category": "market-data",
       "repository": "https://github.com/anjor/coinmarket-mcp-server",
-      "package": "coinmarket-mcp-server",
+      "package": null,
       "packageManager": "npm",
       "networks": [],
-      "features": ["real-time-prices", "market-cap", "volume", "rankings"],
+      "features": [
+        "real-time-prices",
+        "market-cap",
+        "volume",
+        "rankings"
+      ],
       "apiKeyRequired": true,
-      "envVars": ["CMC_API_KEY"],
+      "envVars": [
+        "CMC_API_KEY"
+      ],
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "coinmarket-mcp-server"],
+        "args": [
+          "-y",
+          "coinmarket-mcp-server"
+        ],
         "env": {
           "CMC_API_KEY": "your-api-key"
         }
-      }
+      },
+      "installationType": "git"
     },
     {
       "id": "coincap",
@@ -723,13 +1146,18 @@
       "package": "coincap-mcp",
       "packageManager": "npm",
       "networks": [],
-      "features": ["real-time-market-data"],
+      "features": [
+        "real-time-market-data"
+      ],
       "apiKeyRequired": false,
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "coincap-mcp"]
+        "args": [
+          "-y",
+          "coincap-mcp"
+        ]
       }
     },
     {
@@ -741,13 +1169,20 @@
       "package": "coinstats-mcp",
       "packageManager": "npm",
       "networks": [],
-      "features": ["portfolio-tracking", "market-data", "news-aggregation"],
+      "features": [
+        "portfolio-tracking",
+        "market-data",
+        "news-aggregation"
+      ],
       "apiKeyRequired": true,
       "status": "active",
       "verified": true,
       "config": {
         "command": "npx",
-        "args": ["-y", "coinstats-mcp"]
+        "args": [
+          "-y",
+          "coinstats-mcp"
+        ]
       }
     },
     {
@@ -757,7 +1192,11 @@
       "category": "market-data",
       "repository": "https://github.com/hive-intel/hive-crypto-mcp",
       "networks": [],
-      "features": ["crypto-analytics", "defi-analytics", "web3-analytics"],
+      "features": [
+        "crypto-analytics",
+        "defi-analytics",
+        "web3-analytics"
+      ],
       "apiKeyRequired": true,
       "status": "active",
       "verified": false
@@ -770,17 +1209,31 @@
       "repository": "https://github.com/caiovicentino/polymarket-mcp-server",
       "package": "polymarket-mcp",
       "packageManager": "pip",
-      "networks": ["polygon"],
-      "features": ["trading", "portfolio-management", "real-time-monitoring", "ai-analysis", "market-discovery", "order-management"],
+      "networks": [
+        "polygon"
+      ],
+      "features": [
+        "trading",
+        "portfolio-management",
+        "real-time-monitoring",
+        "ai-analysis",
+        "market-discovery",
+        "order-management"
+      ],
       "tools": 45,
       "apiKeyRequired": true,
-      "envVars": ["POLYGON_PRIVATE_KEY", "POLYGON_ADDRESS"],
+      "envVars": [
+        "POLYGON_PRIVATE_KEY",
+        "POLYGON_ADDRESS"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "uvx",
-        "args": ["polymarket-mcp"],
+        "args": [
+          "polymarket-mcp"
+        ],
         "env": {
           "POLYGON_PRIVATE_KEY": "your-private-key",
           "POLYGON_ADDRESS": "0xYourAddress"
@@ -796,15 +1249,25 @@
       "package": "mcp-server-kalshi",
       "packageManager": "pip",
       "networks": [],
-      "features": ["prediction-markets", "trading", "settlements", "order-management"],
+      "features": [
+        "prediction-markets",
+        "trading",
+        "settlements",
+        "order-management"
+      ],
       "apiKeyRequired": true,
-      "envVars": ["KALSHI_API_KEY", "KALSHI_PRIVATE_KEY_PATH"],
+      "envVars": [
+        "KALSHI_API_KEY",
+        "KALSHI_PRIVATE_KEY_PATH"
+      ],
       "license": "MIT",
       "status": "active",
       "verified": true,
       "config": {
         "command": "uvx",
-        "args": ["mcp-server-kalshi"],
+        "args": [
+          "mcp-server-kalshi"
+        ],
         "env": {
           "KALSHI_API_KEY": "your-api-key",
           "KALSHI_PRIVATE_KEY_PATH": "/path/to/rsa-key"
@@ -817,8 +1280,14 @@
       "description": "API references, deployment guides, protocol knowledge",
       "category": "developer-tools",
       "repository": "https://chainstack.com",
-      "networks": ["multiple"],
-      "features": ["api-references", "deployment-guides", "protocol-knowledge"],
+      "networks": [
+        "multiple"
+      ],
+      "features": [
+        "api-references",
+        "deployment-guides",
+        "protocol-knowledge"
+      ],
       "apiKeyRequired": true,
       "status": "active",
       "verified": false
@@ -829,8 +1298,13 @@
       "description": "Multi-chain RPC endpoints, development tools",
       "category": "developer-tools",
       "repository": "https://www.quicknode.com/guides/ai/solana-mcp-server",
-      "networks": ["multiple"],
-      "features": ["rpc-endpoints", "development-tools"],
+      "networks": [
+        "multiple"
+      ],
+      "features": [
+        "rpc-endpoints",
+        "development-tools"
+      ],
       "apiKeyRequired": true,
       "status": "active",
       "verified": false
@@ -841,8 +1315,14 @@
       "description": "On-chain quantitative trading, market data sources, analytical tools",
       "category": "solana",
       "repository": "https://github.com/sendaifun/awesome-solana-mcp-servers",
-      "networks": ["solana"],
-      "features": ["quantitative-trading", "market-data", "analytical-tools"],
+      "networks": [
+        "solana"
+      ],
+      "features": [
+        "quantitative-trading",
+        "market-data",
+        "analytical-tools"
+      ],
       "apiKeyRequired": false,
       "status": "active",
       "verified": false
@@ -853,8 +1333,14 @@
       "description": "Deploy tradable tokens at zero cost via conversation",
       "category": "solana",
       "repository": "https://github.com/sendaifun/awesome-solana-mcp-servers",
-      "networks": ["solana"],
-      "features": ["token-deployment", "zero-cost", "conversational"],
+      "networks": [
+        "solana"
+      ],
+      "features": [
+        "token-deployment",
+        "zero-cost",
+        "conversational"
+      ],
       "apiKeyRequired": false,
       "status": "active",
       "verified": false

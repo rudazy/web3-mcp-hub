@@ -1,0 +1,758 @@
+{
+  "summary": {
+    "total": 34,
+    "healthy": 20,
+    "partial": 11,
+    "failing": 3,
+    "testedAt": "2025-12-24T14:16:21.881Z"
+  },
+  "results": [
+    {
+      "id": "intuition",
+      "name": "Intuition MCP",
+      "category": "identity",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 6,
+          "forks": 7,
+          "updatedAt": "2025-09-19T00:58:11Z",
+          "archived": false,
+          "description": null
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:16:21.883Z"
+    },
+    {
+      "id": "web3-mcp",
+      "name": "Web3 MCP",
+      "category": "multi-chain",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 91,
+          "forks": 24,
+          "updatedAt": "2025-12-13T06:21:33Z",
+          "archived": false,
+          "description": "1 MCP to rule all them chains"
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:16:25.384Z"
+    },
+    {
+      "id": "tatum",
+      "name": "Tatum Blockchain MCP",
+      "category": "multi-chain",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 13,
+          "forks": 11,
+          "updatedAt": "2025-11-28T14:35:01Z",
+          "archived": false,
+          "description": null
+        },
+        "package": {
+          "exists": true,
+          "version": "1.0.5",
+          "description": "Model Context Protocol server providing access to Tatum's comprehensive blockchain API across 130+ networks with 13 tools"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:26.412Z"
+    },
+    {
+      "id": "goat-sdk",
+      "name": "GOAT SDK MCP",
+      "category": "multi-chain",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 934,
+          "forks": 284,
+          "updatedAt": "2025-12-23T17:06:45Z",
+          "archived": false,
+          "description": "The leading agentic finance toolkit for AI agents"
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:16:28.006Z"
+    },
+    {
+      "id": "nodit",
+      "name": "Nodit MCP",
+      "category": "multi-chain",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 18,
+          "forks": 7,
+          "updatedAt": "2025-12-02T05:34:33Z",
+          "archived": false,
+          "description": "A Model Context Protocol (MCP) server for AI agents to interact with blockchain data via Nodit’s Web3 Data and Node APIs. Enables LLMs to access structured, multi-chain blockchain context with zero blockchain-specific logic."
+        },
+        "package": {
+          "exists": true,
+          "version": "1.0.13",
+          "description": "nodit-mcp-server"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:29.006Z"
+    },
+    {
+      "id": "pocket-network",
+      "name": "Pocket Network MCP",
+      "category": "multi-chain",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 9,
+          "forks": 4,
+          "updatedAt": "2025-12-18T12:09:53Z",
+          "archived": false,
+          "description": "An MCP server to query blockchain data using natural language. Powered by Pocket Network's public endpoints."
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:16:30.740Z"
+    },
+    {
+      "id": "evm-mcp",
+      "name": "EVM MCP Server",
+      "category": "evm",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 349,
+          "forks": 91,
+          "updatedAt": "2025-12-19T16:46:26Z",
+          "archived": false,
+          "description": "MCP server that provides LLMs with tools for interacting with EVM networks"
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:16:31.725Z"
+    },
+    {
+      "id": "alchemy",
+      "name": "Alchemy MCP",
+      "category": "evm",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 71,
+          "forks": 27,
+          "updatedAt": "2025-12-12T08:30:34Z",
+          "archived": false,
+          "description": "Alchemy's official MCP Server. Allow AI agents to interact with Alchemy's blockchain APIs."
+        },
+        "package": {
+          "exists": true,
+          "version": "0.1.8",
+          "description": "MCP server for using Alchemy APIs"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:32.756Z"
+    },
+    {
+      "id": "moralis",
+      "name": "Moralis MCP",
+      "category": "evm",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 14,
+          "forks": 13,
+          "updatedAt": "2025-12-17T17:53:49Z",
+          "archived": false,
+          "description": null
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:16:34.240Z"
+    },
+    {
+      "id": "etherscan",
+      "name": "Etherscan MCP",
+      "category": "evm",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 28,
+          "forks": 22,
+          "updatedAt": "2025-12-19T13:01:20Z",
+          "archived": false,
+          "description": "An MCP (Model Context Protocol) server that provides Ethereum blockchain data tools via Etherscan's API. Features include checking ETH balances, viewing transaction history, tracking ERC20 transfers, fetching contract ABIs, monitoring gas prices, and resolving ENS names."
+        },
+        "package": {
+          "exists": true,
+          "version": "1.1.2",
+          "description": "An MCP server that provides Ethereum blockchain data tools via Etherscan's API"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:36.312Z"
+    },
+    {
+      "id": "starknet",
+      "name": "Starknet MCP",
+      "category": "evm",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 5,
+          "forks": 5,
+          "updatedAt": "2025-11-26T17:16:10Z",
+          "archived": false,
+          "description": "MCP server that provides LLM with tools for interacting with Starknet "
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:16:37.328Z"
+    },
+    {
+      "id": "solana-agent-kit",
+      "name": "Solana Agent Kit MCP",
+      "category": "solana",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 1585,
+          "forks": 819,
+          "updatedAt": "2025-12-23T17:01:58Z",
+          "archived": false,
+          "description": "connect any ai agents to solana protocols"
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:16:39.140Z"
+    },
+    {
+      "id": "solana-web3js",
+      "name": "Solana Web3.js MCP",
+      "category": "solana",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 2,
+          "forks": 1,
+          "updatedAt": "2025-07-15T05:17:44Z",
+          "archived": false,
+          "description": "MCP server for Solana web3.js development and smart contract deployment"
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:40.124Z"
+    },
+    {
+      "id": "solanaviz",
+      "name": "SolanaViz MCP",
+      "category": "solana",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 18,
+          "forks": 4,
+          "updatedAt": "2025-11-04T05:21:57Z",
+          "archived": false,
+          "description": "A Model Context Protocol (MCP) server that enables Claude to access, analyze, and visualize Solana blockchain data through natural language conversations."
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:40.750Z"
+    },
+    {
+      "id": "bitcoin-mcp",
+      "name": "Bitcoin MCP",
+      "category": "bitcoin",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 67,
+          "forks": 19,
+          "updatedAt": "2025-12-21T04:50:59Z",
+          "archived": false,
+          "description": "Bitcoin & Lightning Network MCP Server."
+        },
+        "package": {
+          "exists": true,
+          "version": "0.0.6",
+          "description": "A Model Context Protocol server for interacting with Bitcoin."
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:41.437Z"
+    },
+    {
+      "id": "lightning-mcp",
+      "name": "Lightning Network MCP",
+      "category": "bitcoin",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 5,
+          "forks": 2,
+          "updatedAt": "2025-12-08T15:50:04Z",
+          "archived": false,
+          "description": "Ligthning Network MCP server."
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:42.484Z"
+    },
+    {
+      "id": "ordiscan",
+      "name": "Ordiscan MCP",
+      "category": "bitcoin",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 0,
+          "forks": 1,
+          "updatedAt": "2025-05-16T05:36:32Z",
+          "archived": false,
+          "description": "ordiscan  mcp"
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:43.140Z"
+    },
+    {
+      "id": "mcp-inscription",
+      "name": "MCP Inscription",
+      "category": "bitcoin",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 3,
+          "forks": 4,
+          "updatedAt": "2025-07-31T08:14:24Z",
+          "archived": false,
+          "description": "Enable AI assistants to interact directly with Bitcoin Ordinals inscriptions. Seamlessly integrates with Goose and Claude Desktop to retrieve and display inscription content from transactions."
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:43.812Z"
+    },
+    {
+      "id": "zebedee-zbd",
+      "name": "Zebedee ZBD MCP",
+      "category": "bitcoin",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": false,
+          "statusCode": 301
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "failing",
+      "testedAt": "2025-12-24T14:16:44.468Z"
+    },
+    {
+      "id": "bitcoin-sv",
+      "name": "Bitcoin SV MCP",
+      "category": "bitcoin",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 16,
+          "forks": 8,
+          "updatedAt": "2025-12-17T09:42:44Z",
+          "archived": false,
+          "description": "An MCP Server for Bitcoin SV"
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:45.062Z"
+    },
+    {
+      "id": "base-usdc-transfer",
+      "name": "Base USDC Transfer MCP",
+      "category": "layer2",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 20,
+          "forks": 8,
+          "updatedAt": "2025-11-20T14:34:16Z",
+          "archived": false,
+          "description": "MCP (Model Context Protocol) server - free usdc transfer powered by Coinbase CDP"
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:45.709Z"
+    },
+    {
+      "id": "ergo",
+      "name": "Ergo MCP",
+      "category": "non-evm",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 3,
+          "forks": 1,
+          "updatedAt": "2025-08-23T19:44:12Z",
+          "archived": false,
+          "description": null
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:46.550Z"
+    },
+    {
+      "id": "uniswap-trader",
+      "name": "Uniswap Trader MCP",
+      "category": "defi",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 34,
+          "forks": 13,
+          "updatedAt": "2025-11-20T04:53:18Z",
+          "archived": false,
+          "description": "An MCP server for AI agents to automate token swaps on Uniswap DEX across multiple blockchains."
+        },
+        "package": {
+          "exists": true,
+          "version": "1.0.1",
+          "description": "An MCP server for AI agents to automate token swaps on Uniswap DEX across multiple blockchains."
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:47.831Z"
+    },
+    {
+      "id": "uniswap-poolspy",
+      "name": "Uniswap PoolSpy MCP",
+      "category": "defi",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 6,
+          "forks": 7,
+          "updatedAt": "2025-10-30T05:57:11Z",
+          "archived": false,
+          "description": "An MCP server that tracks newly created liquidity pools on Uniswap across nine blockchain networks."
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:16:50.173Z"
+    },
+    {
+      "id": "opensea",
+      "name": "OpenSea MCP",
+      "category": "nft",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "success": true,
+          "statusCode": 200
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "failing",
+      "testedAt": "2025-12-24T14:16:51.202Z"
+    },
+    {
+      "id": "dune",
+      "name": "Dune Analytics MCP",
+      "category": "analytics",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 0,
+          "forks": 0,
+          "updatedAt": "2025-12-22T04:27:11Z",
+          "archived": false,
+          "description": null
+        },
+        "package": {
+          "exists": true,
+          "version": "0.1.2",
+          "description": "A defensive, token-aware MCP server for Dune Analytics."
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:53.952Z"
+    },
+    {
+      "id": "dune-blockscout",
+      "name": "Dune + Blockscout MCP",
+      "category": "analytics",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": false,
+          "error": "repo not found"
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "failing",
+      "testedAt": "2025-12-24T14:16:55.309Z"
+    },
+    {
+      "id": "heurist-mesh",
+      "name": "Heurist Mesh MCP",
+      "category": "analytics",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 63,
+          "forks": 15,
+          "updatedAt": "2025-12-02T11:50:16Z",
+          "archived": false,
+          "description": null
+        },
+        "package": {
+          "exists": false,
+          "error": "no package specified"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:55.934Z"
+    },
+    {
+      "id": "coingecko",
+      "name": "CoinGecko MCP",
+      "category": "market-data",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 1,
+          "forks": 0,
+          "updatedAt": "2025-08-23T19:43:45Z",
+          "archived": false,
+          "description": "CoinGecko MCP Server - Enabling AI Agent to Autonomously Fetch Data."
+        },
+        "package": {
+          "exists": true,
+          "version": "unknown",
+          "description": ""
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:16:56.589Z"
+    },
+    {
+      "id": "coinmarketcap",
+      "name": "CoinMarketCap MCP",
+      "category": "market-data",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 44,
+          "forks": 15,
+          "updatedAt": "2025-12-07T11:40:39Z",
+          "archived": false,
+          "description": null
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:16:58.402Z"
+    },
+    {
+      "id": "coincap",
+      "name": "CoinCap MCP",
+      "category": "market-data",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 90,
+          "forks": 29,
+          "updatedAt": "2025-12-01T00:20:00Z",
+          "archived": false,
+          "description": "A coincap mcp server to access crypto data from coincap API"
+        },
+        "package": {
+          "exists": true,
+          "version": "0.9.3",
+          "description": "A MCP server to get crypto prices from coincap"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:17:00.730Z"
+    },
+    {
+      "id": "coinstats",
+      "name": "CoinStats MCP",
+      "category": "market-data",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 11,
+          "forks": 10,
+          "updatedAt": "2025-12-13T05:33:36Z",
+          "archived": false,
+          "description": null
+        },
+        "package": {
+          "exists": true,
+          "version": "unknown",
+          "description": ""
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:17:02.167Z"
+    },
+    {
+      "id": "polymarket",
+      "name": "Polymarket MCP",
+      "category": "prediction-markets",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 104,
+          "forks": 30,
+          "updatedAt": "2025-12-24T05:56:44Z",
+          "archived": false,
+          "description": "🤖 AI-Powered MCP Server for Polymarket - Enable Claude to trade prediction markets with 45 tools, real-time monitoring, and enterprise-grade safety features"
+        },
+        "package": {
+          "exists": false,
+          "statusCode": 404
+        }
+      },
+      "status": "partial",
+      "testedAt": "2025-12-24T14:17:03.229Z"
+    },
+    {
+      "id": "kalshi",
+      "name": "Kalshi MCP",
+      "category": "prediction-markets",
+      "verified": true,
+      "tests": {
+        "repository": {
+          "exists": true,
+          "stars": 12,
+          "forks": 3,
+          "updatedAt": "2025-11-25T22:31:48Z",
+          "archived": false,
+          "description": "A MCP server to interact with Kalshi prediction markets"
+        },
+        "package": {
+          "exists": true,
+          "version": "0.1.3",
+          "description": "An MCP server implementation for Kalshi prediction market endpoints"
+        }
+      },
+      "status": "healthy",
+      "testedAt": "2025-12-24T14:17:04.683Z"
+    }
+  ]
+}
