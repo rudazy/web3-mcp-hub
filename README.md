@@ -24,11 +24,10 @@ MCP servers are scattered across GitHub with no central Web3-focused directory. 
 
 | Resource | Description |
 |----------|-------------|
-| [ Getting Started](docs/getting-started.md) | Setup guide for beginners |
-| [ Full Server List](docs/SERVERS.md) | Expanded directory with 50+ servers |
-| [ Contributing](CONTRIBUTING.md) | Add new servers to the registry |
-
----
+| [Live Site](https://rudazy.github.io/web3-mcp-hub/) | Searchable registry with filters |
+| [Getting Started](docs/getting-started.md) | Setup guide for beginners |
+| [Full Server List](docs/SERVERS.md) | Expanded directory with 50+ servers |
+| [Contributing](CONTRIBUTING.md) | Add new servers to the registry |
 
 
 ## Overview
