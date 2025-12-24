@@ -1,7 +1,7 @@
 # Web3 MCP Hub
 
-[![MCP Servers](https://img.shields.io/badge/MCP_Servers-80+-blue?style=for-the-badge)](https://github.com/rudazy/web3-mcp-hub)
-[![Blockchains](https://img.shields.io/badge/Blockchains-130+-green?style=for-the-badge)](https://github.com/rudazy/web3-mcp-hub)
+[![MCP Servers](https://img.shields.io/badge/MCP_Servers-50+-blue?style=for-the-badge)](https://github.com/rudazy/web3-mcp-hub)
+[![Blockchains](https://img.shields.io/badge/Blockchains-150+-green?style=for-the-badge)](https://github.com/rudazy/web3-mcp-hub)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](CONTRIBUTING.md)
 
@@ -25,7 +25,7 @@ MCP servers are scattered across GitHub with no central Web3-focused directory. 
 | Resource | Description |
 |----------|-------------|
 | [ Getting Started](docs/getting-started.md) | Setup guide for beginners |
-| [ Full Server List](docs/SERVERS.md) | Expanded directory with 80+ servers |
+| [ Full Server List](docs/SERVERS.md) | Expanded directory with 50+ servers |
 | [ Contributing](CONTRIBUTING.md) | Add new servers to the registry |
 
 ---
