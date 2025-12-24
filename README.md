@@ -345,6 +345,36 @@ Real-time cryptocurrency pricing and market intelligence.
 | **Hive Intelligence MCP** | Unified crypto, DeFi, Web3 analytics | [hive-intel/hive-crypto-mcp](https://github.com/hive-intel/hive-crypto-mcp) |
 
 ---
+## Prediction Markets
+
+| Server | Repository | Features |
+|--------|------------|----------|
+| **Polymarket MCP** | [caiovicentino/polymarket-mcp-server](https://github.com/caiovicentino/polymarket-mcp-server) | 45 tools, trading, portfolio management, real-time monitoring, AI analysis |
+| **Kalshi MCP** | [9crusher/mcp-server-kalshi](https://github.com/9crusher/mcp-server-kalshi) | Prediction market trading, settlements, order management |
+
+### Configuration
+```json
+{
+  "mcpServers": {
+    "polymarket": {
+      "command": "uvx",
+      "args": ["polymarket-mcp"],
+      "env": {
+        "POLYGON_PRIVATE_KEY": "your-private-key",
+        "POLYGON_ADDRESS": "0xYourAddress"
+      }
+    },
+    "kalshi": {
+      "command": "uvx",
+      "args": ["mcp-server-kalshi"],
+      "env": {
+        "KALSHI_API_KEY": "your-api-key",
+        "KALSHI_PRIVATE_KEY_PATH": "/path/to/rsa-key"
+      }
+    }
+  }
+}
+```
 
 ### Developer Tools
 

@@ -479,6 +479,28 @@ This document contains the full expanded list of all Web3 MCP servers with detai
 
 ## Market Data
 
+---
+
+## Prediction Markets
+
+### Polymarket MCP
+- **Repository:** https://github.com/caiovicentino/polymarket-mcp-server
+- **Networks:** Polygon
+- **Features:** 45 tools including trading, portfolio management, real-time WebSocket monitoring, AI-powered analysis, market discovery, order management, risk management
+- **API Key Required:** Yes (Polygon wallet private key)
+- **License:** MIT
+- **Tools:** 45 comprehensive tools across 5 categories
+- **Categories:** Market Discovery (8), Market Analysis (10), Trading (12), Portfolio (8), Real-time (7)
+
+### Kalshi MCP
+- **Repository:** https://github.com/9crusher/mcp-server-kalshi
+- **Networks:** Kalshi (centralized prediction market)
+- **Features:** Prediction market trading, settlements, order management, REST API integration
+- **API Key Required:** Yes (Kalshi API key + RSA private key)
+- **License:** MIT
+
+---
+
 ### CoinGecko MCP
 - **Repository:** https://github.com/Blockchain-MCPs/coingecko-mcp
 - **Networks:** N/A (market data)

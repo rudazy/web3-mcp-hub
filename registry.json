@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Registry of Model Context Protocol servers for Web3, blockchain, and decentralized applications",
   "repository": "https://github.com/rudazy/web3-mcp-hub",
-  "lastUpdated": "2025-12-23",
-  "totalServers": 80,
+  "lastUpdated": "2025-12-24",
+  "totalServers": 82,
   "totalChains": 130,
   "categories": [
     "identity",
@@ -18,6 +18,7 @@
     "nft",
     "analytics",
     "market-data",
+    "prediction-markets",
     "developer-tools"
   ],
   "servers": [
@@ -274,6 +275,47 @@
       "config": {
         "command": "npx",
         "args": ["-y", "aave-mcp"]
+      }
+    },
+    {
+      "id": "polymarket",
+      "name": "Polymarket MCP",
+      "category": "prediction-markets",
+      "repository": "https://github.com/caiovicentino/polymarket-mcp-server",
+      "package": "polymarket-mcp",
+      "networks": ["polygon"],
+      "features": ["trading", "portfolio-management", "real-time-monitoring", "ai-analysis", "market-discovery", "order-management"],
+      "apiKeyRequired": true,
+      "license": "MIT",
+      "status": "active",
+      "tools": 45,
+      "config": {
+        "command": "uvx",
+        "args": ["polymarket-mcp"],
+        "env": {
+          "POLYGON_PRIVATE_KEY": "your-private-key",
+          "POLYGON_ADDRESS": "0xYourAddress"
+        }
+      }
+    },
+    {
+      "id": "kalshi",
+      "name": "Kalshi MCP",
+      "category": "prediction-markets",
+      "repository": "https://github.com/9crusher/mcp-server-kalshi",
+      "package": "mcp-server-kalshi",
+      "networks": [],
+      "features": ["prediction-markets", "trading", "settlements", "order-management"],
+      "apiKeyRequired": true,
+      "license": "MIT",
+      "status": "active",
+      "config": {
+        "command": "uvx",
+        "args": ["mcp-server-kalshi"],
+        "env": {
+          "KALSHI_API_KEY": "your-api-key",
+          "KALSHI_PRIVATE_KEY_PATH": "/path/to/rsa-key"
+        }
       }
     }
   ]
