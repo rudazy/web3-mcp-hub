@@ -242,12 +242,38 @@ Native Bitcoin and Lightning Network integration for AI agents.
 
 ### Layer 2 Solutions
 
-Optimized tooling for Ethereum Layer 2 networks.
+Optimized tooling for Ethereum Layer 2 networks and privacy-preserving zkRollups.
 
 | Server | Networks | Features | Repository |
 |--------|----------|----------|------------|
 | **EVM MCP Server** | Arbitrum, Optimism, Base, Polygon, zkSync | Full L2 support with unified interface | [mcpdotdirect/evm-mcp-server](https://github.com/mcpdotdirect/evm-mcp-server) |
+| **Aztec Noir MCP** | Aztec Network | 47 tools: Noir compiler, contract deployment, PXE interaction, key management, privacy operations, 7 documentation resources | [rudazy/aztecmcp](https://github.com/rudazy/aztecmcp) |
 | **Base USDC Transfer MCP** | Base | Gas-free USDC transfers via Coinbase MPC wallets | [magnetai/mcp-free-usdc-transfer](https://github.com/magnetai/mcp-free-usdc-transfer) |
+
+**Configuration Example - Aztec Noir MCP:**
+```json
+{
+  "mcpServers": {
+    "aztec": {
+      "command": "npx",
+      "args": ["-y", "aztec-noir-mcp"],
+      "env": {
+        "AZTEC_PXE_URL": "http://localhost:8080"
+      }
+    }
+  }
+}
+```
+
+**Aztec Noir MCP Features:**
+- **47 tools** across 8 categories for comprehensive Aztec development
+- Noir contract compilation and deployment
+- PXE (Private Execution Environment) interaction
+- Key generation and wallet management
+- Transaction simulation and sending
+- Privacy-preserving blockchain operations
+- 7 built-in documentation resources
+- Full Aztec CLI integration
 
 ---
 
@@ -410,6 +436,10 @@ Infrastructure and tooling for blockchain developers.
       "env": {
         "ENABLE_ETHEREUM_TOOLS": "true"
       }
+    },
+    "aztec": {
+      "command": "npx",
+      "args": ["-y", "aztec-noir-mcp"]
     }
   }
 }
@@ -436,6 +466,7 @@ Add to `~/.cursor/mcp.json`:
 claude mcp add intuition npx @0xintuition/intuition-mcp-server
 claude mcp add evm-server npx @mcpdotdirect/evm-mcp-server
 claude mcp add web3-server npx @strangelove-ventures/web3-mcp
+claude mcp add aztec npx aztec-noir-mcp
 ```
 
 ---
@@ -483,6 +514,7 @@ All listed servers must:
 - [Intuition Portal](https://portal.intuition.systems) - On-chain reputation
 - [Alchemy Documentation](https://docs.alchemy.com) - Web3 development
 - [Moralis Documentation](https://docs.moralis.io) - Web3 APIs
+- [Aztec Documentation](https://docs.aztec.network) - Privacy-first zkRollup
 
 ---
 
@@ -514,6 +546,7 @@ Individual MCP servers are licensed under their respective licenses.
 - [Tatum](https://tatum.io) - Multi-chain infrastructure
 - [SendAI](https://github.com/sendaifun) - Solana tooling
 - [MCP.direct](https://github.com/mcpdotdirect) - EVM tooling
+- [Aztec Network](https://aztec.network) - Privacy-first zkRollup
 
 ---
 
