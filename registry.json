@@ -28,7 +28,7 @@
     {
       "id": "onchainai",
       "name": "OnchainAI",
-      "description": "Crypto tool directory for AI agents \u2014 search MCP/CLI/SDK/API/x402 tools, compare install risk, get install guides. Free streamable HTTP MCP; Claude Code plugin with /find-tool and crypto-tools skill.",
+      "description": "Crypto tool intelligence MCP: ranked search, trust and install-risk, compare, x402 metadata, live probes, verified picks, gap audits. Remote tools/call is x402 pay-per-call; website browse may be free. No custody of third-party funds.",
       "category": "developer-tools",
       "repository": "https://github.com/Coinyak/onchainai",
       "homepage": "https://www.onchain-ai.xyz",
