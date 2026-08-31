@@ -409,6 +409,21 @@ Infrastructure and tooling for blockchain developers.
 |--------|----------|------------|
 | **Chainstack Documentation MCP** | API references, deployment guides, protocol knowledge | [Chainstack](https://chainstack.com) |
 | **QuickNode MCP** | Multi-chain RPC endpoints, development tools | [QuickNode](https://www.quicknode.com/guides/ai/solana-mcp-server) |
+| **web3ctx** | Human-validated integration recipes with on-chain receipts, version-pinned docs, EIP/ERC full text, ABIs, deployment addresses; remote MCP, free, no API key | [FarseenSh/web3ctx](https://github.com/FarseenSh/web3ctx) |
+
+
+**Configuration Example - web3ctx (remote, no key):**
+```json
+{
+  "mcpServers": {
+    "web3ctx": {
+      "url": "https://mcp.scarai.xyz/mcp"
+    }
+  }
+}
+```
+
+Or with Claude Code CLI: `claude mcp add --transport http web3ctx https://mcp.scarai.xyz/mcp`
 
 ---
 
