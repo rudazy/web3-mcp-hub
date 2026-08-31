@@ -553,6 +553,12 @@ This document contains the full expanded list of all Web3 MCP servers with detai
 - **Features:** Multi-chain RPC endpoints, development tools
 - **API Key:** Required
 
+### web3ctx
+- **Repository:** https://github.com/FarseenSh/web3ctx
+- **Networks:** Ethereum and EVM ecosystems (documentation, standards, ABIs, and deployment addresses — not an RPC provider)
+- **Features:** Human-validated, chain-run integration recipes with on-chain receipts; version-pinned docs; EIP/ERC full text; ABIs and deployment addresses; five read-only tools over remote MCP (https://mcp.scarai.xyz/mcp)
+- **API Key:** Not required (free remote tier; optional GitHub OAuth for higher limits)
+
 ### Infura MCP
 - **Repository:** https://github.com/infura-mcp
 - **Networks:** Ethereum, IPFS, Filecoin
