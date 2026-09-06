@@ -368,6 +368,7 @@ Real-time cryptocurrency pricing and market intelligence.
 | **CoinCap MCP** | Real-time market data (no API key required) | [QuantGeekDev/coincap-mcp](https://github.com/QuantGeekDev/coincap-mcp) |
 | **CoinStats MCP** | Portfolio tracking, market data, news | [CoinStatsHQ/coinstats-mcp](https://github.com/CoinStatsHQ/coinstats-mcp) |
 | **Hive Intelligence MCP** | Unified crypto, DeFi, Web3 analytics | [hive-intel/hive-crypto-mcp](https://github.com/hive-intel/hive-crypto-mcp) |
+| **SnowSignals TrendVane** | Market-phase classification per timeframe + BTC-derived resolution stats (successor odds, reward-vs-drawdown) | [snowkidind/snowsignals-mcp](https://github.com/snowkidind/snowsignals-mcp) |
 
 ---
 ## Prediction Markets
