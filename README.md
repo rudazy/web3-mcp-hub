@@ -339,6 +339,7 @@ Blockchain data platforms and analytics infrastructure.
 | **Dune Analytics MCP** | Custom SQL queries, cached results, EVM and Solana data | [SAK1337/dune-mcp](https://github.com/SAK1337/dune-mcp) |
 | **Dune + Blockscout MCP** | Combined analytics, multi-chain support, compound tools | [dennisonbertram/web3-stats-mcp](https://github.com/dennisonbertram/web3-stats-mcp) |
 | **Heurist Mesh MCP** | On-chain analytics, token metrics, security insights | [heurist-network/heurist-mesh-mcp-server](https://github.com/heurist-network/heurist-mesh-mcp-server) |
+| **StalkChain Data** | Read-only Solana wallet and token research. Remote MCP with StalkChain OAuth and metered lookups. | [StalkChain/fomo-mcp-api](https://github.com/StalkChain/fomo-mcp-api) |
 
 **Configuration Example - Dune Analytics:**
 ```json
